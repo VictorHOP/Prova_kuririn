@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.background-header-footer{
+    background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #F07F3C 98.21%);
+}
+.background-capa{
+    background-image: url(/assets/imgs/background-capa.png);
+    height: 557px;
+}
+.background-roxo{
+    background-color: #31306C;
+}
+.background-gradient{
+    background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #F07F3C 98.21%);
+    height: 620px;
+}
+.background-certificado{
+    border-radius: 20px;
+    background-color: #dddddd;
+}
+.curso-direito{
+    background-image: url(/assets/imgs/curso-direito.png);
+    width: 326px;
+    height: 538px;
+}
+.curso-psicologia{
+    background-image: url(/assets/imgs/curso-psicologia.png);
+    width: 326px;
+    height: 538px;
+}
+.curso-serv-soc{
+    background-image: url(/assets/imgs/curso-serv-soc.png);
+    width: 326px;
+    height: 538px;
+}
+.curso-preparatorio{
+    background-image: url(/assets/imgs/curso-preparatorio.png);
+    width: 326px;
+    height: 538px;
+}
+.borda-curso{
+    
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, rgba(0, 128, 0, 0) 30%, rgb(238, 163, 3),rgba(27, 39, 27, 0) 70%);
+    border-image-slice: 1;
+
+}
+.botao-hover:hover{
+    background-image: url(/assets/imgs/botao-mais-hover.png);
+    background-repeat: no-repeat;
+    transition: 1s;
+    transform: 1s;
+}
+.lupa{
+    background-color: #f07f3c;
+    border-radius: 100%;
+}
+button{
+    background-color: #f07f3c;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(22, 21, 67, 0.2);
+    padding: 8px 15px 8px 15px;
+    &:hover{
+        background-color: #FF650A;
+        transition: 0.5s;
+    }
+}
+.button-menu{
+    color: #f07f3c;
+    background-color: white !important; 
+}
+
+.laranja{
+    color: #f07f3c;
+}
+.cinza-titulo{
+    color: #565656;
+}
+.cinza-claro{
+    color: #878787;
+
+}
+.roxo{
+    color:#643A9B;
+
+}
+.card-cursos div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: (0px 20px 20px rgba(22, 21, 67, 0.2));
+}
+
+.card-cursos h3{
+    text-align: center;
+}
+.flex-diferenciais div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-depoimentos div p{
+    color: #8B8B8B;
+}
+.cards-depoimentos div h5{
+color:#31306C;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+    right: 39%;
+    position: absolute;
+}
+
+.card{
+    margin-top: 50px;
+    border: none;
+    border-top: 20px solid transparent;
+    border-image: url(/assets/imgs/borda-gradiente.svg);
+    border-image-slice: 6;
+    text-align: center;
+    box-shadow: 0px 20px 20px rgba(49, 48, 108, 0.2);
+    border-radius: 20px;
+}
+.card-subtitle{
+    font-weight: 400;
+font-size: 24px;
+}
+.card-text{
+    height: 189px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 0;
+    padding: 0 18px 0 18px;
+}
+.card h5{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.conteudo-cards-swiper{
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+.conteudo-cards-swiper p{
+    margin-bottom: 0;
+    padding-left: 6px;
+}
+hr{
+    border: 2px solid #E2E2E2;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 25px;
+}
+ul li{
+    
+    &:hover{
+        border-bottom: 1px solid #F07F3C;
+        cursor: pointer;
+    }
+}
+.certificacoes img{
+    padding: 8px;
+}
+.redes-sociais i{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+// FONTES
+
+h1{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 58px;
+    text-align: center;
+}
+h2{
+    font-weight: 700;
+    font-size: 35px;
+
+    text-align: center;
+}
+h4{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+h6{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color:#f07f3c;
+    margin: 0;
+    padding-left: 7px;
+}
+.fs-13{
+    font-size: 13px;
+}
+button{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+}
+.subtitulo-1-section{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.subtitulo-roboto{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+.descer-pagina{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.44em;
+    text-align: center;
+    opacity: 0.5;
+    padding-top: 50px;
+    text-decoration: none;
+    color: white;
+}
+.section-transforme h5{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.section-transforme p{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+.flex-diferenciais p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 25px;
+}
+.certificacoes h3{
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 24px;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+.politicas p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: right;
+    color: #31306C;
+}
+.redes-sociais{
+    font-size: 25px;
+    text-align: center;
+    padding: 8px 0 8px 0;
+}
