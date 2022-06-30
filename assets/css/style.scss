@@ -4,12 +4,39 @@
     color: white;
     font-family: 'Inter', sans-serif;
 }
+.offcanvas{
+    background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #ad5e69 98.21%);
+    
+}
+.offcanvas.offcanvas-end {
+    width: 860px;
+}
+.offcanvas-header{
+    margin-top: 80px;
+}
+.offcanvas-backdrop.show {
+ background-color: #292856FC;
+ opacity: 1;
+}
+.btn-close {
+    opacity: 1;
+    width: 100px;
+    background-color: white;
+    background-image: none;
+    height: auto;
+    border-radius: 20px;
+    &:hover{
+        background-color: white;
+    }
+}
+
 .background-header-footer{
     background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #F07F3C 98.21%);
 }
 .background-capa{
     background-image: url(/assets/imgs/background-capa.png);
     height: 557px;
+    margin-top: 55px;
 }
 .background-roxo{
     background-color: #31306C;
@@ -22,6 +49,9 @@
     border-radius: 20px;
     background-color: #dddddd;
 }
+.vr{
+    height: 100px;
+}
 .curso-direito{
     background-image: url(/assets/imgs/curso-direito.png);
     width: 326px;
@@ -31,6 +61,7 @@
     background-image: url(/assets/imgs/curso-psicologia.png);
     width: 326px;
     height: 538px;
+
 }
 .curso-serv-soc{
     background-image: url(/assets/imgs/curso-serv-soc.png);
@@ -149,7 +180,7 @@ font-size: 24px;
 .conteudo-cards-swiper{
     position: absolute;
     bottom: 70px;
-    left: 50px;
+    left: 70px;
 }
 .conteudo-cards-swiper p{
     margin-bottom: 0;
@@ -166,9 +197,34 @@ ul{
 ul li{
     
     &:hover{
-        border-bottom: 1px solid #F07F3C;
+        text-decoration: underline;
+        text-decoration-color: #F07F3C;
         cursor: pointer;
     }
+}
+.accordion {
+    --bs-accordion-color: #31306C;
+    --bs-accordion-bg: #31306C;
+    --bs-accordion-active-bg: #31306C;
+    --bs-accordion-btn-focus-border-color: #31306C; 
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-item{
+    border: 1px solid #643A9B;
+}
+.accordion button{
+    &:hover{
+        background-color: #31306C;
+    }
+}
+.accordion-button::after {
+    background-image: url(/assets/imgs/accordion-list.png);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/imgs/accordion-list.png);
+}
+.accordion ul{
+    font-size: 14px;
 }
 .certificacoes img{
     padding: 8px;
@@ -177,8 +233,22 @@ ul li{
     padding-right: 20px;
     padding-left: 20px;
 }
+.risco-laranja{
+    width: 90px;
+    border-top: 2px solid #F07F3C;
+    position: absolute;
+    top: 50px;
+    margin-left: 30px;
+}
 // FONTES
-
+.lista-menu li{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: right;
+}
 h1{
     font-weight: 900;
     font-size: 64px;
@@ -269,6 +339,7 @@ button{
     text-align: center;
     padding-top: 25px;
 }
+
 .certificacoes h3{
     font-weight: 700;
     font-size: 27px;
@@ -283,9 +354,75 @@ button{
     line-height: 19px;
     text-align: right;
     color: #31306C;
+    &:hover{
+        color: #F07F3C;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+}
+.accordion h4{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
 }
 .redes-sociais{
     font-size: 25px;
     text-align: center;
     padding: 8px 0 8px 0;
+}
+// SWIPER
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+.swiper-button-next:after{
+    content: url(/assets/imgs/button-next-swiper.png);
+}
+.swiper-button-prev:after{
+    content: url(/assets/imgs/button-prev-swiper.png);
+}
+.swiper-button-next, .swiper-button-prev {
+    margin: 20px;
+    margin-top: 0%;
+}
+// QUERY
+@media (max-width: 400px) {
+    .curso-direito{
+        width: 142px;
+        height: 138px;
+        border-radius: 20px;
+    }
+    .curso-psicologia{
+        width: 142px;
+        height: 138px;
+        border-radius: 20px;
+    }
+    .curso-serv-soc{
+        width: 142px;
+        height: 138px;
+        border-radius: 20px;
+    }
+    .curso-preparatorio{
+        width: 142px;
+        height: 138px;
+        border-radius: 20px;
+    }
+    h1{
+        font-family: Inter;
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    }
+    .max-w-160{
+        max-width: 160px;
+    }
+    .redes-sociais{
+        font-size: 20px;
+    }
 }

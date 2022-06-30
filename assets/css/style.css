@@ -4,6 +4,37 @@
   font-family: 'Inter', sans-serif;
 }
 
+.offcanvas {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #31306C), color-stop(47.21%, #643A9B), color-stop(98.21%, #ad5e69));
+  background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #ad5e69 98.21%);
+}
+
+.offcanvas.offcanvas-end {
+  width: 860px;
+}
+
+.offcanvas-header {
+  margin-top: 80px;
+}
+
+.offcanvas-backdrop.show {
+  background-color: #292856FC;
+  opacity: 1;
+}
+
+.btn-close {
+  opacity: 1;
+  width: 100px;
+  background-color: white;
+  background-image: none;
+  height: auto;
+  border-radius: 20px;
+}
+
+.btn-close:hover {
+  background-color: white;
+}
+
 .background-header-footer {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #31306C), color-stop(47.21%, #643A9B), color-stop(98.21%, #F07F3C));
   background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #F07F3C 98.21%);
@@ -12,6 +43,7 @@
 .background-capa {
   background-image: url(/assets/imgs/background-capa.png);
   height: 557px;
+  margin-top: 55px;
 }
 
 .background-roxo {
@@ -27,6 +59,10 @@
 .background-certificado {
   border-radius: 20px;
   background-color: #dddddd;
+}
+
+.vr {
+  height: 100px;
 }
 
 .curso-direito {
@@ -200,7 +236,7 @@ button:hover {
 .conteudo-cards-swiper {
   position: absolute;
   bottom: 70px;
-  left: 50px;
+  left: 70px;
 }
 
 .conteudo-cards-swiper p {
@@ -219,8 +255,38 @@ ul {
 }
 
 ul li:hover {
-  border-bottom: 1px solid #F07F3C;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F07F3C;
+          text-decoration-color: #F07F3C;
   cursor: pointer;
+}
+
+.accordion {
+  --bs-accordion-color: #31306C;
+  --bs-accordion-bg: #31306C;
+  --bs-accordion-active-bg: #31306C;
+  --bs-accordion-btn-focus-border-color: #31306C;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item {
+  border: 1px solid #643A9B;
+}
+
+.accordion button:hover {
+  background-color: #31306C;
+}
+
+.accordion-button::after {
+  background-image: url(/assets/imgs/accordion-list.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/assets/imgs/accordion-list.png);
+}
+
+.accordion ul {
+  font-size: 14px;
 }
 
 .certificacoes img {
@@ -230,6 +296,23 @@ ul li:hover {
 .redes-sociais i {
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.risco-laranja {
+  width: 90px;
+  border-top: 2px solid #F07F3C;
+  position: absolute;
+  top: 50px;
+  margin-left: 30px;
+}
+
+.lista-menu li {
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
 h1 {
@@ -350,9 +433,85 @@ button {
   color: #31306C;
 }
 
+.politicas p:hover {
+  color: #F07F3C;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.accordion h4 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
 .redes-sociais {
   font-size: 25px;
   text-align: center;
   padding: 8px 0 8px 0;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-button-next:after {
+  content: url(/assets/imgs/button-next-swiper.png);
+}
+
+.swiper-button-prev:after {
+  content: url(/assets/imgs/button-prev-swiper.png);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  margin: 20px;
+  margin-top: 0%;
+}
+
+@media (max-width: 400px) {
+  .curso-direito {
+    width: 142px;
+    height: 138px;
+    border-radius: 20px;
+  }
+  .curso-psicologia {
+    width: 142px;
+    height: 138px;
+    border-radius: 20px;
+  }
+  .curso-serv-soc {
+    width: 142px;
+    height: 138px;
+    border-radius: 20px;
+  }
+  .curso-preparatorio {
+    width: 142px;
+    height: 138px;
+    border-radius: 20px;
+  }
+  h1 {
+    font-family: Inter;
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .max-w-160 {
+    max-width: 160px;
+  }
+  .redes-sociais {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
