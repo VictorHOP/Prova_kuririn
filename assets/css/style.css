@@ -5,16 +5,21 @@
 }
 
 .offcanvas {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #31306C), color-stop(47.21%, #643A9B), color-stop(98.21%, #ad5e69));
-  background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #ad5e69 98.21%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#292856FC), color-stop(30%, #292856FC), color-stop(31%, #31306C), color-stop(67%, #643A9B), color-stop(98%, #ad5e69));
+  background-image: linear-gradient(90deg, #292856FC 0%, #292856FC 30%, #31306C 31%, #643A9B 67%, #ad5e69 98%);
 }
 
 .offcanvas.offcanvas-end {
-  width: 860px;
+  width: 100%;
 }
 
 .offcanvas-header {
   margin-top: 80px;
+}
+
+.menu-azul-escuro ul li {
+  list-style-image: url(/assets/imgs/list-style.png);
+  list-style-position: inside;
 }
 
 .offcanvas-backdrop.show {
@@ -235,8 +240,8 @@ button:hover {
 
 .conteudo-cards-swiper {
   position: absolute;
-  bottom: 70px;
-  left: 70px;
+  bottom: 11%;
+  left: 18%;
 }
 
 .conteudo-cards-swiper p {
@@ -306,6 +311,11 @@ ul li:hover {
   margin-left: 30px;
 }
 
+.borda-certificado {
+  border: 2px solid #C4C4C4;
+  border-radius: 9px;
+}
+
 .lista-menu li {
   font-family: Inter;
   font-size: 27px;
@@ -345,6 +355,13 @@ h6 {
   color: #f07f3c;
   margin: 0;
   padding-left: 7px;
+}
+
+.menu-azul-escuro ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: right;
 }
 
 .fs-13 {
@@ -478,6 +495,10 @@ button {
   margin-top: 0%;
 }
 
+.swiper-button-next {
+  margin-right: 40px;
+}
+
 @media (max-width: 400px) {
   .curso-direito {
     width: 142px;
@@ -512,6 +533,27 @@ button {
   }
   .redes-sociais {
     font-size: 20px;
+  }
+  .lista-menu li {
+    font-size: 20px;
+    text-align: start;
+  }
+  .offcanvas {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #31306C), color-stop(47.21%, #643A9B), color-stop(98.21%, #ad5e69));
+    background-image: linear-gradient(90deg, #31306C -0.7%, #643A9B 47.21%, #ad5e69 98.21%);
+  }
+  .offcanvas-header {
+    margin-top: 10px;
+  }
+  .conteudo-cards-swiper {
+    display: none;
+  }
+  #img-card {
+    height: 188px;
+    width: 220px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
